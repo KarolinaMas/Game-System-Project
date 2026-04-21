@@ -18,6 +18,8 @@ namespace GameSystem.Models
 
             if (target.Health < 0)
                 target.Health = 0;
+
+            return target.Health;
         }
     }
 }
