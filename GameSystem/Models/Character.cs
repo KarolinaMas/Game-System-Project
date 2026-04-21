@@ -21,5 +21,20 @@ namespace GameSystem.Models
 
             return target.Health;
         }
+
+        public virtual int TakeDamage(int damage)
+        {
+            Health -= damage;
+
+            if (Health < 0)
+                Health = 0;
+
+            return Health;
+        }
+
+        public bool IsAlive()
+        {
+            return Health > 0;
+        }
     }
 }
