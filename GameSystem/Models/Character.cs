@@ -36,5 +36,9 @@ namespace GameSystem.Models
         {
             return Health > 0;
         }
+
+        public virtual void UseSpecialAbility() { }
+
+        public abstract void DisplayStats();
     }
 }
