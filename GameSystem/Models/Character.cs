@@ -2,7 +2,7 @@ namespace GameSystem.Models
 {
     public abstract class Character
     {
-        public string Name { get; set; }
+        public required string Name { get; set; }
         public int Level { get; set; }
         public int Health { get; set; }
         public int MaxHealth { get; set; }
